@@ -24,3 +24,10 @@ The Rail Fence Cipher is a classic transposition cipher. It is easy to implement
 - An empty message returns an empty string.
 - The rail count must be a positive integer; anything else throws a `RangeError`.
 - Messages shorter than the rail count still encipher and decipher correctly.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
