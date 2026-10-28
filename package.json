@@ -1,6 +1,6 @@
 {
   "name": "rail-fence-cipher",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Enciphers and deciphers text by writing characters in a zigzag rail pattern and reading them off by row.",
   "type": "module",
   "main": "src/index.js",
